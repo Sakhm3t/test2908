@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" rel=stylesheet />
+    <script src="{{ url_for('static', filename='js/jquery-3.6.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    {% block title %}
+    <title>test2908 - {{title}}</title>
+    {% endblock %}
+</head>
+<body>
+{% block menu %}
+<div class="header">
+    <nav>
+        <a class="link" href="{{url_for('dynamic_forms')}}">Input data</a>
+        <a class="link" href="{{url_for('output_data')}}">Output data</a>
+    </nav>
+</div>
+    <hr/>
+{% endblock %}
+{% block content %}
+{% endblock %}
+</body>
+</html>

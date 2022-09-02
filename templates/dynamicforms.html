@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block title %}
+{% endblock %}
+{% block content %}
+<form action="/added" method="post">
+    <p><label>Record name</label></p>
+        <input type="text" class="input" required >
+    <p><label>Record data</label></p>
+    <div class="inputs">
+        <p><input class='input' type="text" required ></p>
+    </div>
+    <input type="button" class="button" id="add" value=" Add " onclick="newinput()">
+    <input type="submit" class="button" value="Save" onclick="extractDataFromForm()">
+</form>
+{% endblock %}

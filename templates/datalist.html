@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block content %}
+{%for data in data_list%}
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Data</th>
+    </tr>
+    <tr>
+        <th>{{data.key}}</th>
+        <td>
+            <ul>
+                {%for item in data.items %}
+                <li>{{item}}</li>
+                {% endfor %}
+            </ul>
+        </td>
+    </tr>
+</table>
+<hr/>
+{% endfor %}
+{% endblock %}
