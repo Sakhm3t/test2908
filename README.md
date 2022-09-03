@@ -17,6 +17,16 @@
 - установка requirements.txt:
 
     **pip install -r requirements.txt**
+    
+- создать в pgAdmin пользователя и БД, согласно настройкам из проекта
+
+- создать миграции
+
+   **flask db init**      - создание папки для миграций
+   
+   **flask db migrate -m "Initial migration."**
+   
+   **flask db upgrade**   - применение миграций
 
 - запуск приложения:
 
