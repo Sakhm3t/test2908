@@ -1,6 +1,6 @@
 
-function newinput() {;
-	$(".inputs").append('<p><input type="text" class="input" required /></p>');
+function newInput() {;
+	$(".inputs").append('<p><input type="text" class="record" required /></p>');
 }
 
 function extractDataFromForm()
@@ -14,6 +14,6 @@ function extractDataFromForm()
 	$('.record').remove();
 	$('.key').remove();
 
-	const packed_results = `<p><input type="hidden" class="hui" name="json" id="json" value='${json}' /></p>`;
+	const packed_results = `<p><input type="hidden" class="packed" name="json" id="json" value='${json}' /></p>`;
 	$(".inputs").append(packed_results);
 }
